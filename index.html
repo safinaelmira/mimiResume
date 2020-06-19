@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Резюме Эльмира</title>
+    <style>
+        body{
+            font-size: 0.8rem;
+        }
+
+        .listAbout li {
+            cursor: pointer;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+
+        .list-group-item+.list-group-item {
+            border-top-width: 1px;
+        }
+
+        .listDescription>li:nth-of-type(3), .listDescription>li:nth-of-type(5) {
+            height: 340px;
+            overflow: auto;
+        }
+
+        .IT p{
+            font-weight: bold;
+        }
+
+        .IT table td {
+            border: 2px dashed palegreen;
+            padding-left: 10px;
+        }
+
+        footer p {
+            font-size: ;
+        }
+
+        @media (max-width: 425px) {
+            .display-4 {
+                font-size: 2.5rem;
+            }
+            pre{
+                font-size: 68.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-5">Сафина Эльмира Надировна</h1>
+                </div>
+                <div class="col-lg-6">
+                    <pre class="text-muted">
+Пол: жен
+Возраст: 28
+Город проживания: Ташкент
+Тел: +998(90)128-128-9
+E-mail: safina.elmira.usa@gmail.com
+Git Hub user: safinaelmira</pre>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class = "listAbout list-group">
+                            <li class="list-group-item list-group-item-success">Образование</li>
+                            <li class="list-group-item list-group-item-success">Знания не IT</li>
+                            <li class="list-group-item list-group-item-success">Знания IT</li>
+                            <li class="list-group-item list-group-item-success">Языки</li>
+                            <li class="list-group-item list-group-item-success">Опыт работы</li>
+                            <li class="list-group-item list-group-item-success">Характеристика</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <ul class="listDescription list-group">
+                            <li class="list-group-item">
+                                <div class="education">
+                                    <h4>Образование</h4>
+                                    <ol id="educationList">
+                                        <li>
+                                            Академический лицей при ТашИИТ, год окончания 2010, оператор ЭВМ.
+                                        </li>
+                                        <li>
+                                            Ташкентский университет информационных технологий, год окончания 2015, экономист в сфете IT.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="notIT">
+                                    <h4>Знания не IT</h4>
+                                    <ol id = "notITList">
+                                        <li>
+                                            <strong>Starptautiskais documentu serviss Ltd</strong>, Тренинг-курс телемаркетинга, год окончания 2010.
+                                        </li>
+                                        <li>
+                                            <strong>Биржа труда</strong>, Курс базовой бухгалтерии, год окончания 2010.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="IT">
+                                    <h4>Знания IT*</h4>
+                                    <ol id = "ITList">
+                                        <li>
+                                            <strong>HTML, CSS</strong> - верстка по макету, примеры на Git Hub, элементарная CSS анимация, медиа-запросы, адаптив вручную и с Bootstrap(&larr; с ним не получается крепко подружиться). Никакого дизайнерского таланта, только верстка.
+                                        </li>
+                                        <li>
+                                            <strong>JS(ES5,ES6)</strong> - элементарный интерактив на страничке (калькулятор, таймер, слайдер, поп-ап, табы,  )&larr;учу максимально детально нативный чтобы уметь делать все без библиотек.
+                                        </li>
+                                        <li>
+                                            <strong>JQuery</strong> - не скажу что прям знаю все методы и события наизусть и так как учу нативный JS надобности большой нет, но синтаксис знаю, использовала в верстке шаблонов сайтов.
+                                        </li>
+                                        <li>
+                                            <strong>Webpack, Babel</strong> - знаю несколько npm команд, понимаю для чего нужны, использую WebPack, Babel  - пытаюсь подружиться, но, то в одном проекте переводит код, во втором не переводит.
+                                        </li>
+                                        <li>
+                                            <strong>Git, GitKracken, Git Hub</strong> - знаю несколько npm команд, понимаю для чего нужны, использую чтобы навбивать руку, но продуктом деятельности этой команды 3х git -  не пользуюсь.
+                                        </li>
+                                        <li>
+                                            <strong>Local Storage, Ajax</strong> - понимаю как пользоваться, как принять или отправить запрос серверу и сохранить чтото в locale storage
+                                        </li>
+                                        <li>
+                                            <strong>Mocha,Chai</strong> - считайте просто знаю слова и как подключить, никогда не использовала тестировщики и тесты не писала
+                                        </li>
+                                        <li>
+                                            <strong>React JS, JSX</strong> - учу
+                                        </li>
+                                        <li>
+                                            <strong>PhotoShop, Figma, CoreDraw</strong> - PS и Figma знаю то что нужно для верстки, Corel Draw - чуть получше, так как когда была полиграфия, хочешь не хочешь пришлось и дизайн какой то элементарный делать.
+                                        </li>
+                                    </ol>
+                                    <p>* отмечаю жирненько, меня никто не чекает, я сама учусь и сама наслаждаюсь, поэтому проф взгляд вероятно найдет тысячу ошибок в моем любом коде. НО! Я очень стараюсь за отстуствием любой проверки моих кодов и ну железно научусь как делать правильно если мне скажут где ошибки. Вот ресурсы по которым отучилась, потому что сейчас учу только React JS:</p>
+                                    <table>
+                                        <tr>
+                                            <td>JS - полный курс с нуля до результата</td>
+                                            <td>beonmax.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Интенсивное погружение в JS</td>
+                                            <td>udemy.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Уроки по JQuery</td>
+                                            <td>webacademy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JQuery, Адаптивный дизайн с помощью Bootstrap</td>
+                                            <td>docode.ru</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JS для начинающих, Вэб разработка для начинающих HTML CSS</td>
+                                            <td>stepic.org</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JS для начинающих, HTML для начинающих, CSS для начинающих</td>
+                                            <td>ru.code-basics.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Основы HTML CSS и вэб-дизайна</td>
+                                            <td>ru.hexlet.io</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вэб-верстальщик: Начало</td>
+                                            <td>wayup.in</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="languages">
+                                    <h4>Языки</h4>
+                                    <ol id = "languagesList">
+                                        <li>
+                                            <strong>Русский </strong>- родной
+                                        </li>
+                                        <li>
+                                            <strong>Английский</strong> - разговорный ielts 6.0 (в котором speaking 7.0)
+                                        </li>
+                                        <li>
+                                            <strong>Узбекский</strong> - скудный, на уровне "передайте за проезд"
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="experience">
+                                    <h4>Опыт работы</h4>
+                                    <ol id = "experienceList">
+                                        <li>
+                                            <strong>ИП Сафина Эльмира Надировна 2019-2020</strong> - были деньги, купила оборудование, открыла ИП, наняла людей, уволила людей, научилась corel draw и как работает рекламная отрасль, закрылась.
+                                        </li>
+                                        <li>
+                                            <strong>OOO “OIL NEFT SERVIS” 2018-2019 главный менеджер</strong> - Работа с существующими клиентами, холодные звонки, проведение переговоров с поставщиками, проведение переговоров с клиентами, участие при растаможивании дизельного топлива, работа с лабораториями, отгрузка дизельного топлива с нефтебазы в жд и авто цистерныОформление договоров, с-ф, накладных, товаро-транспортных накладных, решение всех возникающих проблем с клиентами, HR менеджмент.
+                                            
+                                        </li>
+                                        <li>
+                                            <strong>Международная школа ментальной арифметики МЕНАР 2016-2018 старший преподаватель</strong> - Преподавание ментальной арифметики детям до 16 лет, преподавание ментальной арифметики потенциальным преподавателям, HR менеджмент, проведение ознакомительных уроков для школ, детских садов, организаций, с целью привлечения потенциальных клиентов.                                   
+                                        </li>
+                                        <li>
+                                            <strong>Представительство «Marco Polo Gulf Trading FZE» U.A.E. 2011 менеджер</strong> - Мониторинг пересылки документов, работа с логистическими компаниями, встречи с иностранными представителями, управление недвижимым имуществом – сдача в аренду, наем рабочих бригад для ремонтных работ, полный контроль.                                   
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="about">
+                                    <h4>Характеристика</h4>
+                                    <p id="aboutList">
+                                        Написала свое первое hello world 23 марта 2020 года. Я даже не юниор согласно требованиям в вакансиях которые читаю в интернете. Но обладаю исключительным упорством и ярым желанием выделяться среди остальных. Кодинг - это страсть. Не знаю как будет в работе, но в процессе обучения - получаю дикое удовольствие от каждой написаной строчки.
+                                    </p>
+                                    <p>
+                                        Вредных привычек нет, семейных обязательств тоже. Могу быть заводилой в команде, а могу спокойно работать в одиночку. Честный человек.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <hr>
+            <p>
+                Понимаю что знаю очень мало, но готова учиться и работать не покладая рук. Не могу сходу написать код, обязательно думаю, если не знаю гугулю, если знаю листаю тетради, потому что запомнить все не получается пока т.к.нет практики. У меня нет цели зарабатывать 500 долларов и жить припеваючи. Хочу зарабатывать 5000 долларов в месяц не обманывая, не воруя и единственный ресурс который есть под руками - голова.
+            </p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            let listItem = document.querySelectorAll('.listAbout>li');
+            let listDescription = document.querySelectorAll('.listDescription>li');
+
+            function hideshowDescription(a){
+                for (let i = a; i < listDescription.length; i++){
+                    if(listDescription[i].classList.contains('show')){
+                        listDescription[i].classList.remove('show');
+                        listDescription[i].classList.add('hide');
+                        listItem[i].classList.remove('list-group-item-light');
+                    } else {
+                        listDescription[i].classList.add('hide');
+                        listItem[i].classList.remove('list-group-item-light');
+                    }
+                    
+                }
+            }
+            hideshowDescription(1);    
+
+            for (let i = 0; i < listItem.length; i++){
+
+                listItem[i].addEventListener('click', () => {
+                    hideshowDescription(0);
+                    listItem[i].classList.add('list-group-item-light');
+                    listDescription[i].classList.add('show');          
+                });
+            }
+        });
+    </script>
+</body>
+</html>
