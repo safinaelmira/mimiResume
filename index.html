@@ -76,8 +76,17 @@ Git Hub user: safinaelmira
         <section>
             <div class="container">
                 <div class="row">
-                    
-                    <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <ul class = "listAbout list-group">
+                            <li class="list-group-item list-group-item-pink list-group-item-light text-light">Образование</li>
+                            <li class="list-group-item list-group-item-pink text-light">Знания не IT</li>
+                            <li class="list-group-item list-group-item-pink text-light">Знания IT</li>
+                            <li class="list-group-item list-group-item-pink text-light">Языки</li>
+                            <li class="list-group-item list-group-item-pink text-light">Опыт работы</li>
+                            <li class="list-group-item list-group-item-pink text-light">Характеристика</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
                         <ul class="listDescription list-group">
                             <li class="list-group-item">
                                 <div class="education">
@@ -202,8 +211,36 @@ Git Hub user: safinaelmira
 .
             </p>
         </div>
-        <input type="button" value="Распечатать" onclick="print()"></input>
     </footer>
-    
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            let listItem = document.querySelectorAll('.listAbout>li');
+            let listDescription = document.querySelectorAll('.listDescription>li');
+
+            function hideshowDescription(a){
+                for (let i = a; i < listDescription.length; i++){
+                    if(listDescription[i].classList.contains('show')){
+                        listDescription[i].classList.remove('show');
+                        listDescription[i].classList.add('hide');
+                        listItem[i].classList.remove('list-group-item-light');
+                    } else {
+                        listDescription[i].classList.add('hide');
+                        listItem[i].classList.remove('list-group-item-light');
+                    }
+                    
+                }
+            }
+            hideshowDescription(1);    
+
+            for (let i = 0; i < listItem.length; i++){
+
+                listItem[i].addEventListener('click', () => {
+                    hideshowDescription(0);
+                    listItem[i].classList.add('list-group-item-light');
+                    listDescription[i].classList.add('show');          
+                });
+            }
+        });
+    </script>
 </body>
 </html>
